@@ -1,7 +1,7 @@
 import { network} from "hardhat";
-import {developmentChains, networkConfig} from "../helper-hardhat.config" 
+import * as helper from "../helper-hardhat.config" 
 
-module.exports = async ({ getNamedAccounts, deployments,}) => {
+module.exports = async ({ getNamedAccounts:any, deployments,}) => {
     const { log, deploy } = deployments;
     const { deployer } = await getNamedAccounts();
   
